@@ -12,7 +12,7 @@ async function getStorageAt(contractAddress, slot) {
 async function getAllStorageSlots(contractAddress) {
     const storageData = {};
 
-    for (let i = 0; i <= 168; i++) {
+    for (let i = 0; i <= 172; i++) {
         const slot = BigInt(i);
         storageData[slot] = await getStorageAt(contractAddress, slot);
     }
